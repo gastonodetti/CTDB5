@@ -1,0 +1,22 @@
+@startuml
+
+class Articulo{}
+
+
+
+abstract class ManejadorPadre{
++ validarCalidadDelProducto();
+}
+
+class ControlLote{}
+class ControlPeso{}
+class ControlEnvase{}
+
+class AnalistaDeCalidad{
++ comprobar();
+}
+
+
+
+
+@enduml
