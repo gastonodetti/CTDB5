@@ -1,0 +1,14 @@
+@startuml
+class Cancion{
+- nombre: String
+- artista: String
+- genero: String
+}
+class CancionFactory{
+- HashMap<String, Cancion>
+}
+class ListaReproduccion{
+- nombre: String
+}
+
+@enduml
