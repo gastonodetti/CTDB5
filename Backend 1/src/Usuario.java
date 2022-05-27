@@ -1,75 +1,106 @@
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-
 import java.io.File;
 import java.sql.*;
-import java.util.logging.Logger;
+//ver que esten estos 4 imports y las librerias instaladas (log4j, h2 y junit)
 
 public class Usuario {
-    private static final Logger logger = Logger.getLogger(Usuario.class);
-    private static final String SQL_CREATE_TABLE = "DROP TABLE IF EXISTS USUARIOS; CREATE TABLE USUARIOS "
-        + "(ID INT PRIMARY KEY, PRIMER_NOMBRE varchar(150) NOT NULL, APELLIDO varchar(150) NOT NULL, EDAD INT)";
 
-    private static final String SQL_INSERT = "INSERT INTO USUARIOS (ID, PRIMER_NOMBRE, APELLIDO) "
-        + "VALUES (1, 'Ignacio', 'Pantalone')";
+    //paso 1 creo conexion
+    public static Connection obtenerConexion() throws Exception{ //este metodo me conecta a la base de datos
+        Class.forName("org.h2.Driver").newInstance();
+        return DriverManager.getConnection("jdbc:h2:~/test", "sa", ""); //datos de la base de datos h2
+    }
 
-    private static final String SQL_INSERT1 = "INSERT INTO USUARIOS (ID, PRIMER_NOMBRE, APELLIDO, EDAD) "
-            + "VALUES (2, 'Cristian', 'Rivas', 35)";
+    //paso 2 creo metodo main que va a ejecutar todo
+    public static void main(String[] args) throws Exception{
 
-    private static final String SQL_INSERT2 = "INSERT INTO USUARIOS (ID, PRIMER_NOMBRE, APELLIDO, EDAD) "
-            + "VALUES (3, 'Gabriela', 'Rico', 25)";
-
-    private static final String SQL_DELETE = "DELETE FROM USUARIOS WHERE PRIMER_NOMBRE LIKE '%gnac%'";
-
-    public static void main(String[] args) throws Exception {
-        File log4jProperties = new File("src/config/log4j.properties");
+        File log4jProperties = new File("src/Config/log4j.properties");
         PropertyConfigurator.configure(log4jProperties.getAbsolutePath());
-        Logger logger = Logger.getLogger(Usuario.class);
 
-        Connection conexion = null;
+        Logger logger = Logger.getLogger(Usuario.class); //creo logger y le paso la clase como parametro
+
+        Connection conexion = null ; //declaro esta variable en null para poder cerrar la BD con el finally despues
         try {
-            conexion = obtenerConexion();
-            Statement statement = conexion.createStatement();
-            statement.execute(SQL_CREATE_TABLE);
+            conexion = obtenerConexion(); //creo una conexion nueva
+            Statement statement = conexion.createStatement(); //esto permite ejecutar los queries en sql
+            statement.execute(SQL_CREATE_TABLE); //ejecuto el querie creado antes usando execute que no devuelve nada
 
             Statement statement1 = conexion.createStatement();
-            statement1.execute(SQL_INSERT);
+            statement1.execute(SQL_INSERT1);
 
             Statement statement2 = conexion.createStatement();
-            statement2.execute(SQL_INSERT1);
+            statement2.execute(SQL_INSERT2);
 
-            Statement statement3 = conexion.createStatement();
-            statement3.execute(SQL_INSERT2);
+            System.out.println("CREO TABLA Y REGISTROS");
 
-            listarUsuario(conexion);
+            listarUsuarios(conexion); //ejecuto el metodo declarado abajo que imprime por consola todos los registros
+                                        //de la tabla
 
-            logger.info("=============================================");
+            System.out.println("======================================================");
+            System.out.println("ELIMINO UN REGISTRO Y MUESTRO COMO QUEDA LA TABLA");
 
-            Statement deleteStatement = conexion.createStatement();
-            int fieldsDeleted = deleteStatement.executeUpdate(SQL_DELETE);
+            Statement deleteStatement = conexion.createStatement(); //creo el statement para borrar el registro
+            int registroBorrado = deleteStatement.executeUpdate(SQL_DELETE);
 
-            logger.info("Row deleted = " + fieldsDeleted);
-            listarUsuario(conexion);
+            listarUsuarios(conexion);
 
-        } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("MUESTRO LO QUE SE ELIMINO");
+
+            logger.info(registroBorrado);
+
+            System.out.println("======================================================");
+
+        } catch (Exception e){
+            e.printStackTrace(); //imprimo por consola el error
         } finally {
-            conexion.close();
+            conexion.close(); //cierro la conexion de la base de datos
         }
+
     }
 
-    private static void listarUsuario(Connection conexion) throws SQLException {
-        String sql = "SELECT * FROM USUARIOS";
-        Statement statement = conexion.createStatement();
-        ResultSet listaUsuarios = statement.executeQuery(sql);
+    //paso 3 creo queries que voy a ejecutar
 
-        while (listaUsuarios.next()) {
-            System.out.println(listaUsuarios.getString(2) + " " + listaUsuarios.getString(3));
+        //creo tabla
+        private static final String SQL_CREATE_TABLE = "DROP TABLE IF EXISTS USUARIOS; CREATE TABLE USUARIOS " +
+            "(ID INT PRIMARY KEY , NOMBRE varchar(30) NOT NULL ," +
+            "APELLIDO varchar(30) NOT NULL," +
+            "EDAD INT)";
+
+        //inserto registros
+
+        private static final String SQL_INSERT1 = "INSERT INTO USUARIOS (ID, NOMBRE, APELLIDO, EDAD) " +
+                "VALUES (1,'GASTON', 'ODETTI', 27)";
+
+        private static final String SQL_INSERT2 = "INSERT INTO USUARIOS (ID, NOMBRE, APELLIDO, EDAD) " +
+                "VALUES (2,'JAZMIN', 'ALBERT', 24)";
+
+        //elimino un registro
+        private static final String SQL_DELETE = "DELETE FROM USUARIOS WHERE ID=1";
+
+    //paso 4 Creo metodo que liste usuarios
+    private static void listarUsuarios(Connection conexion)throws SQLException {
+        String seleccionarTodo = "SELECT * FROM USUARIOS"; //hago la querie
+        Statement statement = conexion.createStatement(); //creo el statement
+        ResultSet resultadoQuerie = statement.executeQuery(seleccionarTodo); //ejecuto la querie con execute querie que devuelve un resultSet
+
+        while (resultadoQuerie.next()){
+            System.out.println("Nombre: " +
+                    resultadoQuerie.getString(2) +
+                    " | Apellido: " + resultadoQuerie.getString(3));
         }
+
     }
 
-    public static Connection obtenerConexion() throws Exception {
-        Class.forName("org.h2.Driver").newInstance();
-        return DriverManager.getConnection("jdbc:h2:~/usuarios", "root", "toor");
-    }
+
+
+
+
+
+
+
+
+
+
+
 }

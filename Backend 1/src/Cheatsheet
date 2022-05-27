@@ -1,0 +1,30 @@
+Pasos:
+
+1- Creo la clase
+2- Creo la conexion:
+    Hago un metodo estatico: public static Connection obtenerConexion() throws Exception
+    Creo el class del driver para conectarme a la bd: Class.forName("org.h2.Driver").newInstance();
+    Instalo el driver h2: En carpeta src busco la opcion Open Module Settings y en librerias me fijo si esta
+    Una vez instalada la libreria el metodo obtenerConexion() me debe quedar algo asi:
+
+    public static Connection obtenerConexion() throws Exception{
+           Class.forName("org.h2.Driver").newInstance();
+           return DriverManager.getConnection(" jdbc:h2:~/test", "sa", "");
+       }
+3- Escribo el metodo main para ejecutar todo (pongo main en intellij y listo). Pongo throws Exception
+4- Creo un try - catch para validar que el codigo funcione, dentro del main. creo variable connection y la declaro null
+5- Pruebo si conecta a la BD (debo cerrar todo el h2 para que funcione sino tira error, y controlar librerias instaladas )
+6- Guardo en variables als queries sql que quiera ejecutar (ver ejemplo en codigo)
+7 - Creo los statements. Esto vincula las queries y las permite ejecutar en la base de datos y luego ejecuto la querie:
+    Statement statement = conexion.createStatement();
+    statement.execute(SQL_CREATE_TABLE);
+8- Por cada querie que quiera ejecutar debo crear un statement nuevo
+9- Si consigna pide Logs:
+    Debo importar la libreria
+    Instanciar la libreria
+    creo el Logger y le paso como parametro la clase: Logger logger = Logger.getLogger(Usuario.class);
+10- Creo metodo para listar usuarios usando el logger: private static void listarUsuarios(Connection conexion)throws SQLException
+11-
+
+
+
