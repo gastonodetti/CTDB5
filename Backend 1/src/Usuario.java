@@ -89,18 +89,5 @@ public class Usuario {
                     resultadoQuerie.getString(2) +
                     " | Apellido: " + resultadoQuerie.getString(3));
         }
-
     }
-
-
-
-
-
-
-
-
-
-
-
-
 }
