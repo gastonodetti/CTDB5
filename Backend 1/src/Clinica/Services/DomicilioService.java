@@ -17,8 +17,14 @@ public class DomicilioService {
         return domicilioDAO.guardar(domicilio);
     }
 
-    public Domicilio buscar(int id) throws SQLException {
-        return domicilioDAO.buscar(id);
+    public Domicilio buscar(Domicilio domicilio) throws SQLException {
+        return domicilioDAO.buscar(domicilio);
+    }
+    public Domicilio eliminar(Domicilio domicilio) throws SQLException {
+        return domicilioDAO.eliminar(domicilio);
+    }
+    public Domicilio modificar(Domicilio domicilio, String nuevoValor ) throws  SQLException{
+        return domicilioDAO.modificar(domicilio, nuevoValor);
     }
 
 

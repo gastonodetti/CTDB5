@@ -11,17 +11,15 @@ public class PacienteDAOH2 implements DAO<Paciente> {
     }
 
     @Override
-    public Paciente buscar(int id) {
+    public Paciente buscar(Paciente paciente) {
         return null;
     }
 
     @Override
-    public Paciente eliminar(int id) {
-        return null;
-    }
+    public Paciente eliminar(Paciente paciente) { return null;}
 
     @Override
-    public Paciente modificar(int id) {
+    public Paciente modificar(Paciente paciente, String nuevoValor) {
         return null;
     }
 

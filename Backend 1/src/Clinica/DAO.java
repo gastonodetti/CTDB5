@@ -6,8 +6,8 @@ import java.sql.SQLException;
 
 public interface DAO<T>{
     public T guardar (T t) throws SQLException;
-    public T buscar (int id) throws SQLException;
-    public T eliminar (int id)throws SQLException;
-    public T modificar (int id) throws SQLException;
+    public T buscar (T t) throws SQLException;
+    public T eliminar (T t)throws SQLException;
+    public T modificar (T t, String nuevoValor) throws SQLException;
 
 }
