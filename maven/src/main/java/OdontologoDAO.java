@@ -1,7 +1,3 @@
-package DAO_Entity;
-
-import Entity.Odontologo;
-import Interface.IDAO;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import java.io.File;
@@ -28,7 +24,7 @@ public class OdontologoDAO implements IDAO<Odontologo> {
     //CONSTRUCTOR DE LA CLASE Y PROPERTIES LOG4J ==========================================
 
     public OdontologoDAO(){
-            File log4jProperties = new File("src/Config/log4j.properties");
+            File log4jProperties = new File("src/main/java/log4j.properties");
             PropertyConfigurator.configure(log4jProperties.getAbsolutePath());
             logger = Logger.getLogger(OdontologoDAO.class);
     }

@@ -1,4 +1,3 @@
-package Entity;
 
 public class Odontologo {
     private String matricula;

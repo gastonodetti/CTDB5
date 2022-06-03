@@ -1,7 +1,3 @@
-package Service;
-
-import Entity.Odontologo;
-import Interface.IDAO;
 import java.sql.SQLException;
 
 public class OdontologoService {
