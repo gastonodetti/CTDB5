@@ -1,6 +1,3 @@
-import clinica.OdontologoDAO;
-import clinica.Odontologo;
-import clinica.OdontologoService;
 import org.junit.jupiter.api.Test;
 
 import java.sql.SQLException;
