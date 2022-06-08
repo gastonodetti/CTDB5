@@ -1,0 +1,25 @@
+@startuml
+
+class Empresa implements Serializable {
+    + List empleados
+    + String cuit
+    + String razonSocial
+    + void agregarEmpleado(Empleado)
+}
+
+class Empleado implements Serializable {
+    + String nombre
+    + String apellido
+    + String legajo
+    + Double sueldo
+}
+
+class Main {
+    + main(String[] args)
+}
+
+Empresa --> Empleado
+Main --> Empresa
+Main --> Empleado
+
+@enduml
