@@ -47,5 +47,25 @@ DAO: Genera una interfaz que separa la logica de negocio de la logica que consul
 Maven: es una herramienta que aporta librerias, las empaqueta y permite testear el codigo de una manera mas simple
 
 
+SERIALIZAR (clase implements Serializable)
+
+import java.io.*;
+public class Prueba{
+ public static void main(String[] args) throws IOException {
+   /*Guardamos el objeto en un archivo*/
+   FileOutputStream fo = new FileOutputStream("OutputFile.txt");
+   ObjectOutputStream oos = new ObjectOutputStream(fo);
+   oos.writeObject(persona);
+  
+   /*Recuperamos el objeto en un archivo*/
+   FileInputStream fi = new FileInputStream("OutputFile.txt");
+   ObjectInputStream ois = new ObjectInputStream(fi);
+  
+   System.out.println(ois.readObject());
+   dos.close();
+ }
+}
+
+
 
 
