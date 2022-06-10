@@ -1,0 +1,24 @@
+@startuml
+
+abstract class  Vendedor{
++ mostrarCategoria();
+--
++ {abstract} calcularPuntaje();
++ {abstract} recategorizar();
+
+- puntaje: int;
++ {abstract} vender();
+}
+
+class Empleado {
++ conseguirAfiliado();
++ vender();
+}
+class Afiliado {
++ vender();
+}
+
+Vendedor --* Empleado
+Vendedor --* Afiliado
+
+@enduml

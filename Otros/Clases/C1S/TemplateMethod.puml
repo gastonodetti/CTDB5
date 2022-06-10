@@ -1,0 +1,24 @@
+@startuml
+
+class Empleado {
++ liquidarSueldo();
+--
++ calculo();
++ impresion();
++ deposito():
+}
+
+class EmpleadoEfectivos{
++ calculo();
++ impresion();
+}
+
+class EmpleadoContratados{
++ calculo();
++ impresion();
+}
+
+Empleado --* EmpleadoEfectivos
+Empleado --* EmpleadoContratados
+
+@enduml

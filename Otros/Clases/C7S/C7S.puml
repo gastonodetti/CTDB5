@@ -1,0 +1,20 @@
+@startuml
+
+interface ArboloFactory {
+- bosque: Hash<Arbol>
++ getArbol(): Arbol
+
+}
+class Arbol {
+- alto: float
+- ancho: float
+- color: String
+- tipo: String
+}
+
+class Main {
+
+}
+
+
+@enduml

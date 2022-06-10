@@ -1,0 +1,187 @@
+INFO    2022-06-01 21:38:21,264 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-01 21:40:11,997 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-01 21:40:53,993 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-01 21:40:54,001 [main] Clinica.Daos.DomicilioDAOH2  - inserto registro
+INFO    2022-06-01 21:40:54,014 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-01 21:57:44,344 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-01 21:57:44,353 [main] Clinica.Daos.DomicilioDAOH2  - inserto registro
+INFO    2022-06-01 21:57:44,361 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-01 21:57:44,603 [main] Clinica.Daos.DomicilioDAOH2  - conexion a base de datos
+INFO    2022-06-01 21:57:44,645 [main] Clinica.Daos.DomicilioDAOH2  - buscando registro
+INFO    2022-06-01 21:58:46,436 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-01 21:58:46,446 [main] Clinica.Daos.DomicilioDAOH2  - inserto registro
+INFO    2022-06-01 21:58:46,458 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-01 22:00:04,634 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-01 22:00:04,642 [main] Clinica.Daos.DomicilioDAOH2  - inserto registro
+INFO    2022-06-01 22:00:04,651 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-01 22:00:39,566 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-01 22:00:39,575 [main] Clinica.Daos.DomicilioDAOH2  - inserto registro
+INFO    2022-06-01 22:00:39,587 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-01 22:00:39,741 [main] Clinica.Daos.DomicilioDAOH2  - conexion a base de datos
+INFO    2022-06-01 22:00:39,782 [main] Clinica.Daos.DomicilioDAOH2  - buscando registro
+INFO    2022-06-02 12:29:22,405 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 12:29:22,405 [main] Clinica.Daos.DomicilioDAOH2  - inserto registro
+INFO    2022-06-02 12:29:22,405 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 12:29:22,460 [main] Clinica.Daos.DomicilioDAOH2  - conexion a base de datos
+INFO    2022-06-02 12:29:22,481 [main] Clinica.Daos.DomicilioDAOH2  - buscando registro
+INFO    2022-06-02 12:30:48,671 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 12:30:48,671 [main] Clinica.Daos.DomicilioDAOH2  - inserto registro
+INFO    2022-06-02 12:30:48,671 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 12:30:48,727 [main] Clinica.Daos.DomicilioDAOH2  - conexion a base de datos
+INFO    2022-06-02 12:30:48,746 [main] Clinica.Daos.DomicilioDAOH2  - buscando registro
+INFO    2022-06-02 12:36:05,214 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 12:36:05,603 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 12:36:05,603 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 12:36:05,692 [main] Clinica.Daos.DomicilioDAOH2  - Busco registro ID = 1
+INFO    2022-06-02 12:56:26,493 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 12:56:26,879 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 12:56:26,879 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 12:56:26,948 [main] Clinica.Daos.DomicilioDAOH2  - Busco registro ID = 1
+INFO    2022-06-02 12:59:07,059 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 12:59:07,461 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 12:59:07,461 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 12:59:07,531 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 12:59:07,558 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 12:59:07,558 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 12:59:07,579 [main] Clinica.Daos.DomicilioDAOH2  - Busco registro ID = 1
+INFO    2022-06-02 12:59:49,967 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 12:59:50,349 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 12:59:50,351 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 12:59:50,386 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 12:59:50,403 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 12:59:50,403 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 12:59:50,420 [main] Clinica.Daos.DomicilioDAOH2  - Busco registro ID = 1
+INFO    2022-06-02 13:00:22,163 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 13:00:22,534 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 13:00:22,534 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 13:00:22,580 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 13:00:22,614 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 13:00:22,614 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 13:00:22,634 [main] Clinica.Daos.DomicilioDAOH2  - Busco registro ID = 1
+INFO    2022-06-02 13:00:22,664 [main] Clinica.Daos.DomicilioDAOH2  - Busco registro ID = 2
+INFO    2022-06-02 13:00:56,830 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 13:00:57,189 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 13:00:57,206 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 13:00:57,258 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 13:00:57,260 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 13:00:57,260 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 13:00:57,278 [main] Clinica.Daos.DomicilioDAOH2  - Busco registro ID = 1
+INFO    2022-06-02 13:00:57,326 [main] Clinica.Daos.DomicilioDAOH2  - Busco registro ID = 2
+INFO    2022-06-02 13:23:37,480 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 13:23:37,917 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 13:23:37,932 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 13:23:37,991 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 13:23:38,011 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 13:23:38,012 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 13:23:38,018 [main] Clinica.Daos.DomicilioDAOH2  - Busco registro ID = 1
+INFO    2022-06-02 13:35:57,169 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 13:35:57,523 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 13:35:57,530 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 13:35:57,567 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 13:35:57,584 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 13:35:57,600 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 14:18:13,339 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 14:18:13,753 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 14:18:13,753 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 14:18:13,802 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 14:18:13,802 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 14:18:13,817 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 14:23:35,327 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 14:23:35,695 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 14:23:35,695 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 14:23:35,757 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 14:23:35,775 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 14:23:35,775 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 15:05:54,638 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 15:05:55,041 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 15:05:55,045 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 15:05:55,102 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 15:05:55,119 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 15:05:55,120 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 15:07:00,117 [main] Clinica.Daos.DomicilioDAOH2  - Busco registro ID = 1
+INFO    2022-06-02 15:07:48,877 [main] Clinica.Daos.DomicilioDAOH2  - Busco registro ID = 2
+INFO    2022-06-02 15:10:18,605 [main] Clinica.Daos.DomicilioDAOH2  - Modifico domicilio ID = 1
+INFO    2022-06-02 15:10:18,965 [main] Clinica.Daos.DomicilioDAOH2  - Error
+INFO    2022-06-02 15:10:19,003 [main] Clinica.Daos.DomicilioDAOH2  - Busco registro ID = 1
+INFO    2022-06-02 15:30:16,134 [main] Clinica.Daos.DomicilioDAOH2  - Modifico domicilio ID = 1
+INFO    2022-06-02 15:30:16,555 [main] Clinica.Daos.DomicilioDAOH2  - Error
+INFO    2022-06-02 15:30:16,589 [main] Clinica.Daos.DomicilioDAOH2  - Busco registro ID = 1
+INFO    2022-06-02 15:32:06,208 [main] Clinica.Daos.DomicilioDAOH2  - Modifico domicilio ID = 1
+INFO    2022-06-02 15:32:06,627 [main] Clinica.Daos.DomicilioDAOH2  - Busco registro ID = 1
+INFO    2022-06-02 15:32:25,592 [main] Clinica.Daos.DomicilioDAOH2  - Modifico domicilio ID = 1
+INFO    2022-06-02 15:32:25,974 [main] Clinica.Daos.DomicilioDAOH2  - Busco registro ID = 1
+INFO    2022-06-02 15:38:53,635 [main] Clinica.Daos.DomicilioDAOH2  - Busco registro ID = 2
+INFO    2022-06-02 15:40:52,843 [main] Clinica.Daos.DomicilioDAOH2  - Borrando registro(s) ID = 2
+INFO    2022-06-02 15:40:53,301 [main] Clinica.Daos.DomicilioDAOH2  - Busco registro ID = 2
+INFO    2022-06-02 15:41:16,795 [main] Clinica.Daos.DomicilioDAOH2  - Borrando registro(s) ID = 2
+INFO    2022-06-02 15:41:17,221 [main] Clinica.Daos.DomicilioDAOH2  - Busco registro ID = 2
+INFO    2022-06-02 15:43:12,931 [main] Clinica.Daos.DomicilioDAOH2  - Borrando registro(s) ID = 2
+INFO    2022-06-02 15:43:13,328 [main] Clinica.Daos.DomicilioDAOH2  - Modifico domicilio ID = 1
+INFO    2022-06-02 15:43:13,372 [main] Clinica.Daos.DomicilioDAOH2  - Error
+INFO    2022-06-02 15:59:06,704 [main] Clinica.Daos.DomicilioDAOH2  - Borrando registro(s) ID = 2
+INFO    2022-06-02 15:59:07,091 [main] Clinica.Daos.DomicilioDAOH2  - Modifico domicilio ID = 1
+INFO    2022-06-02 16:00:06,480 [main] Clinica.Daos.DomicilioDAOH2  - Borrando registro(s) ID = 2
+INFO    2022-06-02 16:00:06,878 [main] Clinica.Daos.DomicilioDAOH2  - Modifico domicilio ID = 1
+INFO    2022-06-02 16:00:06,916 [main] Clinica.Daos.DomicilioDAOH2  - Busco registro ID = 1
+INFO    2022-06-02 18:11:43,739 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 18:11:44,819 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 18:11:44,829 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 18:11:45,081 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 18:11:45,120 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 18:11:45,121 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 18:12:13,610 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 18:12:14,534 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 18:12:14,551 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 18:12:14,775 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 18:12:14,831 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 18:12:14,834 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 18:12:14,925 [main] Clinica.Daos.DomicilioDAOH2  - Borrando registro(s) ID = 1
+INFO    2022-06-02 18:12:36,523 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 18:12:37,322 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 18:12:37,332 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 18:12:37,561 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 18:12:37,599 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 18:12:37,601 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 18:13:04,019 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 18:13:04,793 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 18:13:04,803 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 18:13:05,216 [main] Clinica.Daos.DomicilioDAOH2  - Creo tabla
+INFO    2022-06-02 18:13:05,257 [main] Clinica.Daos.DomicilioDAOH2  - Inserto registro
+INFO    2022-06-02 18:13:05,258 [main] Clinica.Daos.DomicilioDAOH2  - muestro tabla
+INFO    2022-06-02 18:13:05,345 [main] Clinica.Daos.DomicilioDAOH2  - Borrando registro(s) ID = 1
+INFO    2022-06-02 18:13:05,470 [main] Clinica.Daos.DomicilioDAOH2  - Borrando registro(s) ID = 2
+INFO    2022-06-02 19:19:43,991 [main] DAO_Entity.OdontologoDAO  - Creando tabla ODONTOLOGOS (si es que no existe)...
+INFO    2022-06-02 19:19:44,651 [main] DAO_Entity.OdontologoDAO  - Insertando un nuevo registro...
+INFO    2022-06-02 19:19:44,661 [main] DAO_Entity.OdontologoDAO  - Registro insertado exitosamente
+INFO    2022-06-02 19:21:41,304 [main] DAO_Entity.OdontologoDAO  - Listando odontólogos de la base de datos...
+INFO    2022-06-02 19:21:41,376 [main] DAO_Entity.OdontologoDAO  - Listado exitoso.
+INFO    2022-06-02 19:22:19,504 [main] DAO_Entity.OdontologoDAO  - Listando odontologos de la base de datos...
+INFO    2022-06-02 19:22:19,551 [main] DAO_Entity.OdontologoDAO  - Listado exitoso.
+INFO    2022-06-02 19:23:57,174 [main] DAO_Entity.OdontologoDAO  - Listando odontologos de la base de datos...
+INFO    2022-06-02 19:23:57,217 [main] DAO_Entity.OdontologoDAO  - Listado exitoso.
+INFO    2022-06-02 19:24:33,014 [main] DAO_Entity.OdontologoDAO  - Listando odontologos de la base de datos...
+INFO    2022-06-02 19:24:33,054 [main] DAO_Entity.OdontologoDAO  - Listado exitoso.
+INFO    2022-06-02 19:27:05,346 [main] DAO_Entity.OdontologoDAO  - Listando odontologos de la base de datos...
+INFO    2022-06-02 19:27:05,387 [main] DAO_Entity.OdontologoDAO  - Listado exitoso.
+INFO    2022-06-02 19:27:53,717 [main] DAO_Entity.OdontologoDAO  - Listando odontologos de la base de datos...
+INFO    2022-06-02 19:27:53,756 [main] DAO_Entity.OdontologoDAO  - Listado exitoso.
+INFO    2022-06-02 19:32:31,541 [main] DAO_Entity.OdontologoDAO  - Creando tabla ODONTOLOGOS (si es que no existe)...
+INFO    2022-06-02 19:32:32,148 [main] DAO_Entity.OdontologoDAO  - Insertando un nuevo registro...
+INFO    2022-06-02 19:32:32,156 [main] DAO_Entity.OdontologoDAO  - Registro insertado exitosamente
+INFO    2022-06-02 19:32:32,487 [main] DAO_Entity.OdontologoDAO  - Creando tabla ODONTOLOGOS (si es que no existe)...
+INFO    2022-06-02 19:32:32,546 [main] DAO_Entity.OdontologoDAO  - Insertando un nuevo registro...
+INFO    2022-06-02 19:32:32,548 [main] DAO_Entity.OdontologoDAO  - Registro insertado exitosamente
+INFO    2022-06-02 19:32:47,285 [main] DAO_Entity.OdontologoDAO  - Listando odontologos de la base de datos...
+INFO    2022-06-02 19:32:47,323 [main] DAO_Entity.OdontologoDAO  - Listado exitoso.
+INFO    2022-06-02 19:35:59,497 [main] DAO_Entity.OdontologoDAO  - Listando odontologos de la base de datos...
+INFO    2022-06-02 19:35:59,549 [main] DAO_Entity.OdontologoDAO  - Listado exitoso.
+INFO    2022-06-02 19:40:17,828 [main] DAO_Entity.OdontologoDAO  - Creando tabla ODONTOLOGOS (si es que no existe)...
+INFO    2022-06-02 19:40:18,604 [main] DAO_Entity.OdontologoDAO  - Ha ocurrido un error
+INFO    2022-06-02 19:41:23,877 [main] DAO_Entity.OdontologoDAO  - Creando tabla ODONTOLOGOS (si es que no existe)...
+INFO    2022-06-02 19:41:24,482 [main] DAO_Entity.OdontologoDAO  - Insertando un nuevo registro...
+INFO    2022-06-02 19:41:24,494 [main] DAO_Entity.OdontologoDAO  - Registro insertado exitosamente
+INFO    2022-06-02 19:41:24,854 [main] DAO_Entity.OdontologoDAO  - Creando tabla ODONTOLOGOS (si es que no existe)...
+INFO    2022-06-02 19:41:24,910 [main] DAO_Entity.OdontologoDAO  - Insertando un nuevo registro...
+INFO    2022-06-02 19:41:24,912 [main] DAO_Entity.OdontologoDAO  - Registro insertado exitosamente
+INFO    2022-06-02 19:41:35,338 [main] DAO_Entity.OdontologoDAO  - Listando odontologos de la base de datos...
+INFO    2022-06-02 19:41:35,378 [main] DAO_Entity.OdontologoDAO  - Listado exitoso.

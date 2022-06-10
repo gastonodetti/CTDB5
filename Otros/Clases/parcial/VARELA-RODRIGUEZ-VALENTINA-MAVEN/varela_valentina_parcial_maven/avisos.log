@@ -1,0 +1,154 @@
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:01] [DEBUG] [OdontologoDaoH2:32] Iniciando método 'consultarPorId()'
+[2021-08-26 19:13:01] [ERROR] [Service:38] El id no puede ser null
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:01] [DEBUG] [OdontologoDaoH2:32] Iniciando método 'consultarPorId()'
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:13:01] [ERROR] [Service:38] No existe ningun odontologo con ese ID
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:01] [DEBUG] [OdontologoDaoH2:32] Iniciando método 'consultarPorId()'
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:13:01] [DEBUG] [OdontologoDaoH2:55] Terminó la ejecución del método 'consultarPorId()' con éxito
+[2021-08-26 19:13:01] [DEBUG] [OdontologoDaoH2:116] Iniciando método 'actualizar()'
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:13:01] [DEBUG] [OdontologoDaoH2:133] Terminó la ejecución del método 'actualizar()' con éxito
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:01] [DEBUG] [OdontologoDaoH2:88] Iniciando método 'insertarNuevo()'
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:13:01] [DEBUG] [OdontologoDaoH2:110] Terminó la ejecución del método 'insertarNuevo()' con éxito
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:01] [DEBUG] [OdontologoDaoH2:32] Iniciando método 'consultarPorId()'
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:13:01] [ERROR] [Service:38] No existe ningun odontologo con ese ID
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:01] [DEBUG] [OdontologoDaoH2:88] Iniciando método 'insertarNuevo()'
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:13:01] [ERROR] [Service:50] La columna "NOMBRE" no permite valores nulos (NULL)
+NULL not allowed for column "NOMBRE"; SQL statement:
+INSERT INTO odontologos (nombre,apellido,numeroMatricula) VALUES (?,?,?); [23502-200]
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:01] [DEBUG] [OdontologoDaoH2:32] Iniciando método 'consultarPorId()'
+[2021-08-26 19:13:01] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:13:01] [DEBUG] [OdontologoDaoH2:55] Terminó la ejecución del método 'consultarPorId()' con éxito
+[2021-08-26 19:13:02] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:02] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:02] [DEBUG] [OdontologoDaoH2:88] Iniciando método 'insertarNuevo()'
+[2021-08-26 19:13:02] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:13:02] [DEBUG] [OdontologoDaoH2:110] Terminó la ejecución del método 'insertarNuevo()' con éxito
+[2021-08-26 19:13:02] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:02] [DEBUG] [OdontologoDaoH2:116] Iniciando método 'actualizar()'
+[2021-08-26 19:13:02] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:13:02] [DEBUG] [OdontologoDaoH2:133] Terminó la ejecución del método 'actualizar()' con éxito
+[2021-08-26 19:13:02] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:02] [DEBUG] [OdontologoDaoH2:32] Iniciando método 'consultarPorId()'
+[2021-08-26 19:13:02] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:13:02] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:02] [DEBUG] [OdontologoDaoH2:88] Iniciando método 'insertarNuevo()'
+[2021-08-26 19:13:02] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:02] [DEBUG] [OdontologoDaoH2:88] Iniciando método 'insertarNuevo()'
+[2021-08-26 19:13:02] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:13:02] [DEBUG] [OdontologoDaoH2:110] Terminó la ejecución del método 'insertarNuevo()' con éxito
+[2021-08-26 19:13:02] [DEBUG] [OdontologoDaoH2:61] Iniciando método 'consultarTodos()'
+[2021-08-26 19:13:02] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:13:02] [DEBUG] [OdontologoDaoH2:82] Terminó la ejecución del método 'consultarTodos()' con éxito
+[2021-08-26 19:13:02] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:02] [DEBUG] [OdontologoDaoH2:116] Iniciando método 'actualizar()'
+[2021-08-26 19:13:02] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:13:02] [DEBUG] [OdontologoDaoH2:32] Iniciando método 'consultarPorId()'
+[2021-08-26 19:13:02] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:13:02] [DEBUG] [OdontologoDaoH2:55] Terminó la ejecución del método 'consultarPorId()' con éxito
+[2021-08-26 19:50:53] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:53] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:53] [DEBUG] [OdontologoDaoH2:32] Iniciando método 'consultarPorId()'
+[2021-08-26 19:50:53] [ERROR] [Service:42] El id no puede ser null
+[2021-08-26 19:50:53] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:53] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:53] [DEBUG] [OdontologoDaoH2:32] Iniciando método 'consultarPorId()'
+[2021-08-26 19:50:53] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:50:54] [ERROR] [Service:42] No existe ningun odontologo con ese ID
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:61] Iniciando método 'consultarTodos()'
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:82] Terminó la ejecución del método 'consultarTodos()' con éxito
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:32] Iniciando método 'consultarPorId()'
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:55] Terminó la ejecución del método 'consultarPorId()' con éxito
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:116] Iniciando método 'actualizar()'
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:133] Terminó la ejecución del método 'actualizar()' con éxito
+[2021-08-26 19:50:54] [INFO ] [Service:70] Los nuevos datos son:
+Odontologo
+	Nombre: 'Pipo'
+	Apellido: 'Piposo'
+	Matricula: 112233
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:88] Iniciando método 'insertarNuevo()'
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:110] Terminó la ejecución del método 'insertarNuevo()' con éxito
+[2021-08-26 19:50:54] [INFO ] [Service:53] El odontologo Odontologo
+	Nombre: 'John'
+	Apellido: 'Doe'
+	Matricula: 666666 fue dado de alta con éxito
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:32] Iniciando método 'consultarPorId()'
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:50:54] [ERROR] [Service:42] No existe ningun odontologo con ese ID
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:88] Iniciando método 'insertarNuevo()'
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:50:54] [ERROR] [Service:55] La columna "NOMBRE" no permite valores nulos (NULL)
+NULL not allowed for column "NOMBRE"; SQL statement:
+INSERT INTO odontologos (nombre,apellido,numeroMatricula) VALUES (?,?,?); [23502-200]
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:32] Iniciando método 'consultarPorId()'
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:55] Terminó la ejecución del método 'consultarPorId()' con éxito
+[2021-08-26 19:50:54] [INFO ] [Service:39] El odontologo con ID: 1 es Odontologo
+	Nombre: 'Pepe'
+	Apellido: 'Pepardo'
+	Matricula: 123456
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:88] Iniciando método 'insertarNuevo()'
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:110] Terminó la ejecución del método 'insertarNuevo()' con éxito
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:61] Iniciando método 'consultarTodos()'
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:82] Terminó la ejecución del método 'consultarTodos()' con éxito
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:116] Iniciando método 'actualizar()'
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:133] Terminó la ejecución del método 'actualizar()' con éxito
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:32] Iniciando método 'consultarPorId()'
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:88] Iniciando método 'insertarNuevo()'
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:88] Iniciando método 'insertarNuevo()'
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:110] Terminó la ejecución del método 'insertarNuevo()' con éxito
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:61] Iniciando método 'consultarTodos()'
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:82] Terminó la ejecución del método 'consultarTodos()' con éxito
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:116] Iniciando método 'actualizar()'
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:18] Instanciando ConfiguracionJDBC con valores por defecto. Driver: H2
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:32] Iniciando método 'consultarPorId()'
+[2021-08-26 19:50:54] [DEBUG] [ConfiguracionJDBC:34] Obteniendo conexión con la base de datos
+[2021-08-26 19:50:54] [DEBUG] [OdontologoDaoH2:55] Terminó la ejecución del método 'consultarPorId()' con éxito
