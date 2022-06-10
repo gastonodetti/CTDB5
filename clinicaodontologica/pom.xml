@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.dh</groupId>
-	<artifactId>clinicaOdontologica</artifactId>
+	<artifactId>clinicaodontologica</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>clinicaOdontologica</name>
-	<description>Demo project for Spring Boot</description>
+	<name>clinicaodontologica</name>
+	<description>Proyecto final de DH</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
