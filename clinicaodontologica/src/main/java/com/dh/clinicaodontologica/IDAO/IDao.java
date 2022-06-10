@@ -1,9 +1,12 @@
 package com.dh.clinicaodontologica.IDAO;
 
-import java.sql.SQLException;
+import java.util.List;
 
-public interface IDao<Paciente> {
+public interface IDao<T,V> {
 
-    public Paciente guardarPaciente(Paciente paciente) throws SQLException;
+   List<T> listar();
+   T buscar(V key);
+
+   void limpiar();
     
 }

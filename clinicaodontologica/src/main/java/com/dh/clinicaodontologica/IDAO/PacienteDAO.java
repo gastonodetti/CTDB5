@@ -1,46 +1,42 @@
 package com.dh.clinicaodontologica.IDAO;
 import com.dh.clinicaodontologica.models.Paciente;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-public class PacienteDAO implements IDao<Paciente>{
+public class PacienteDAO implements IDao<Paciente, String>{
 
-    private static final String SQL_CREAR_TABLA = "CREATE TABLE IF NOT EXISTS PACIENTES " +
-            "(ID int(10), " +
-            "NOMBRE varchar(200)," +
-            "APELLIDO varchar(200)," +
-            "DNI varchar(20)," +
-            "EMAIL varchar(200),"+
-            "FECHA_INGRESO varchar(50))";
+    private Connection connection;
 
-    private static final String SQL_INSERTAR_REGISTRO = "INSERT INTO PACIENTES (ID, NOMBRE, APELLIDO," +
-            "DNI,EMAIL,FECHA_INGRESO) VALUES (?,?,?,?,?,?)";
+    public PacienteDAO(){
+        Paciente paciente1 = new Paciente(1,"peter", "parker","4050","pp@gmail.com", "10/6");
+        Paciente paciente2 = new Paciente(2,"peter1", "parker1","40501","pp1@gmail.com", "10/6");
+        Paciente paciente3 = new Paciente(3,"peter2", "parker2","40502","pp2@gmail.com", "10/6");
+
+        for (Paciente paciente: Arrays.asList(paciente1,paciente2,paciente3)) {
+            insertar(paciente);
+        }
+    }
+    @Override
+    public List<Paciente> listar() {
+
+        connection = null;
+
+        List<Paciente> pacientes = new ArrayList<>();
+
+        try {
+            connection = 
+        }
+    }
 
     @Override
-    public Paciente guardarPaciente(Paciente paciente) throws SQLException {
+    public Paciente buscar(String key) {
+        return null;
+    }
 
-        Connection connection = null;
-        try {
-            Statement statement = connection.createStatement();
-            statement.execute(SQL_CREAR_TABLA);
+    @Override
+    public void limpiar() {
 
-            PreparedStatement preparedStatement = connection.prepareStatement(SQL_INSERTAR_REGISTRO);
-            preparedStatement.setInt(1,paciente.getId());
-            preparedStatement.setString(2,paciente.getNombre());
-            preparedStatement.setString(3,paciente.getApellido());
-            preparedStatement.setString(4,"dni generico");
-            preparedStatement.setString(5,paciente.getEmail());
-            preparedStatement.setString(6,"9/6");
-        }
-        catch (Exception e){
-            e.printStackTrace();
-            connection.rollback();
-        }
-        finally {
-            connection.close();
-        }
-        return paciente;
     }
 }

@@ -17,7 +17,7 @@ public class PacienteController {
         this.pacienteService = pacienteService;
     }
 
-    @Autowired
+    //@Autowired
     public PacienteService pacienteService;
 
     @GetMapping("/todos")
