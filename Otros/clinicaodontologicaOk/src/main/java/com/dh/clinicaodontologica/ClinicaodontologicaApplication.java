@@ -1,13 +1,13 @@
-package com.dh.clinicaOdontologica;
+package com.dh.clinicaodontologica;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ClinicaOdontologicaApplication {
+public class ClinicaodontologicaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ClinicaOdontologicaApplication.class, args);
+		SpringApplication.run(ClinicaodontologicaApplication.class, args);
 	}
 
 }

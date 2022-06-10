@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.dh</groupId>
-	<artifactId>clinicaOdontologica</artifactId>
+	<artifactId>clinicaodontologica</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>clinicaOdontologica</name>
+	<name>clinicaodontologica</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
@@ -31,6 +31,15 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>2.1.212</version>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>

@@ -36,13 +36,12 @@ public class PacienteService {
         return null;
     }
 
-    private static IDao<Paciente> pacienteIDAO;
 /*
     public PacienteService(IDao<Paciente> pacienteIDAO){
         this.pacienteIDAO = pacienteIDAO;
     }*/
     public Paciente guardarPaciente(Paciente paciente) throws SQLException {
-        return pacienteIDAO.guardarPaciente(paciente);
+        return null;
     }
 
 }
