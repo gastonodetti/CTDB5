@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
@@ -13,7 +14,8 @@ import java.util.Date;
 public class Turno {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "turno_sequence", sequenceName = "turno_sequence", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "turno_sequence")
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
@@ -24,7 +26,12 @@ public class Turno {
     @JoinColumn(name = "odontologo_id", nullable = false)
     private Odontologo odontologo;
 
-    private Date date;
+    private LocalDateTime date = LocalDateTime.now();
 
-
+    public Turno(){}
+    public Turno(Paciente paciente, Odontologo odontologo, LocalDateTime date) {
+        this.paciente = paciente;
+        this.odontologo = odontologo;
+        this.date = date;
+    }
 }

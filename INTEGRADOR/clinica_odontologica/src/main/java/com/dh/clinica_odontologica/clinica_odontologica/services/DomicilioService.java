@@ -1,11 +1,8 @@
 package com.dh.clinica_odontologica.clinica_odontologica.services;
 
 import com.dh.clinica_odontologica.clinica_odontologica.dto.DomicilioDTO;
-import com.dh.clinica_odontologica.clinica_odontologica.dto.OdontologoDTO;
 import com.dh.clinica_odontologica.clinica_odontologica.models.Domicilio;
-import com.dh.clinica_odontologica.clinica_odontologica.models.Odontologo;
 import com.dh.clinica_odontologica.clinica_odontologica.repository.IDomicilioRepository;
-import com.dh.clinica_odontologica.clinica_odontologica.repository.IOdontologoRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class DomicilioService implements IDomicilioService{
+public class DomicilioService {
 
     @Autowired
     private IDomicilioRepository domicilioRepository;
@@ -21,17 +18,12 @@ public class DomicilioService implements IDomicilioService{
     @Autowired
     ObjectMapper mapper;
 
-    private void guardarDomicilio(DomicilioDTO domicilioDTO){
-        Domicilio nuevoDomicilio = mapper.convertValue(domicilioDTO, Domicilio.class);
-        domicilioRepository.save(nuevoDomicilio);
+
+    public Domicilio crearDomicilio(Domicilio domicilio) {
+        domicilioRepository.save(domicilio);
+        return domicilio;
     }
 
-    @Override
-    public void crearDomicilio(DomicilioDTO domicilioDTO) {
-        guardarDomicilio(domicilioDTO);
-    }
-
-    @Override
     public DomicilioDTO buscarDomicilio(Long id) {
         Optional<Domicilio> domicilio = domicilioRepository.findById(id);
         DomicilioDTO domicilioDTO = null;
@@ -41,12 +33,11 @@ public class DomicilioService implements IDomicilioService{
         return domicilioDTO;
     }
 
-    @Override
-    public void modificarDomicilio(DomicilioDTO domicilioDTO) {
-        guardarDomicilio(domicilioDTO);
+    public Domicilio modificarDomicilio(Domicilio domicilio) {
+        domicilioRepository.save(domicilio);
+        return domicilio;
     }
 
-    @Override
     public void eliminarDomicilio(Long id) {
         domicilioRepository.deleteById(id);
     }

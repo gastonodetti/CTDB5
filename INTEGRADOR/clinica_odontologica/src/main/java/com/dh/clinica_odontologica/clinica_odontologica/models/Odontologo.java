@@ -10,17 +10,28 @@ import java.util.Set;
 
 @Entity
 @Table(name = "odontologos")
-@Getter @Setter
+@Getter
 public class Odontologo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
+    @Setter
     private String apellido;
+    @Setter
     private String nombre;
+    @Setter
     private String matricula;
+    @Setter
     @OneToMany(mappedBy = "odontologo")
     @JsonIgnore
     private Set<Turno> turnos = new HashSet<>();
 
+    public Odontologo() {}
+    public Odontologo(Long id, String apellido, String nombre, String matricula) {
+        this.apellido = apellido;
+        this.nombre = nombre;
+        this.matricula = matricula;
+
+    }
 }

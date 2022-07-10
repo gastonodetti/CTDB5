@@ -13,50 +13,40 @@ import java.util.Optional;
 import java.util.Set;
 
 @Service
-public class OdontologoService implements IOdontologoService{
-
+public class OdontologoService {
     @Autowired
     private IOdontologoRepository odontologoRepository;
-
     @Autowired
     ObjectMapper mapper;
 
-    private void guardarOdontologo(OdontologoDTO odontologoDTO){
-        Odontologo nuevoOdontologo = mapper.convertValue(odontologoDTO, Odontologo.class);
-        odontologoRepository.save(nuevoOdontologo);
+
+    public Odontologo crearOdontologo(Odontologo odontologo) {
+        odontologoRepository.save(odontologo);
+        return odontologo;
     }
 
-    @Override
-    public void crearOdontologo(OdontologoDTO odontologoDTO) {
-        guardarOdontologo(odontologoDTO);
-    }
-
-    @Override
     public OdontologoDTO buscarOdontologo(Long id) {
         Optional<Odontologo> odontologo = odontologoRepository.findById(id);
-        OdontologoDTO odontologoDTO = null;
-        if(odontologo.isPresent()){
-            odontologoDTO = mapper.convertValue(odontologo,OdontologoDTO.class);
-        }
+        OdontologoDTO odontologoDTO = mapper.convertValue(odontologo, OdontologoDTO.class);
         return odontologoDTO;
+
     }
 
-    @Override
-    public void modificarOdontologo(OdontologoDTO odontologoDTO) {
-        guardarOdontologo(odontologoDTO);
+    public Odontologo modificarOdontologo(Odontologo odontologo) {
+        odontologoRepository.save(odontologo);
+        return odontologo;
     }
 
-    @Override
     public void eliminarOdontologo(Long id) {
-        odontologoRepository.deleteById(id);
+            odontologoRepository.deleteById(id);
     }
 
-    @Override
     public Set<OdontologoDTO> listarOdontologos() {
         List<Odontologo> odontologos = odontologoRepository.findAll();
         Set<OdontologoDTO> odontologosDTO = new HashSet<>();
         for (Odontologo odontologo: odontologos){
-            odontologosDTO.add(mapper.convertValue(odontologo, OdontologoDTO.class));
+            OdontologoDTO odontologoDTO = mapper.convertValue(odontologo, OdontologoDTO.class);
+            odontologosDTO.add(odontologoDTO);
         }
         return odontologosDTO;
     }

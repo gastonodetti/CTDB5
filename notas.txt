@@ -1,0 +1,2 @@
+no usar los dto en los services para guardar info - solo se usan para traer info
+

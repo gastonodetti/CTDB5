@@ -1,8 +1,6 @@
 package com.dh.clinica_odontologica.clinica_odontologica.services;
 
-import com.dh.clinica_odontologica.clinica_odontologica.dto.OdontologoDTO;
 import com.dh.clinica_odontologica.clinica_odontologica.dto.PacienteDTO;
-import com.dh.clinica_odontologica.clinica_odontologica.models.Odontologo;
 import com.dh.clinica_odontologica.clinica_odontologica.models.Paciente;
 import com.dh.clinica_odontologica.clinica_odontologica.repository.IPacienteRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -15,7 +13,7 @@ import java.util.Optional;
 import java.util.Set;
 
 @Service
-public class PacienteService implements IPacienteService{
+public class PacienteService {
 
     @Autowired
     private IPacienteRepository pacienteRepository;
@@ -24,17 +22,11 @@ public class PacienteService implements IPacienteService{
     ObjectMapper mapper;
 
 
-    private void guardarPaciente(PacienteDTO pacienteDTO){
-        Paciente nuevoPaciente = mapper.convertValue(pacienteDTO, Paciente.class);
-        pacienteRepository.save(nuevoPaciente);
+    public Paciente crearPaciente(Paciente paciente) {
+        pacienteRepository.save(paciente);
+        return paciente;
     }
 
-    @Override
-    public void crearPaciente(PacienteDTO pacienteDTO) {
-        guardarPaciente(pacienteDTO);
-    }
-
-    @Override
     public PacienteDTO buscarPaciente(Long id) {
         Optional<Paciente> paciente = pacienteRepository.findById(id);
         PacienteDTO pacienteDTO = null;
@@ -43,17 +35,15 @@ public class PacienteService implements IPacienteService{
         }
         return pacienteDTO;    }
 
-    @Override
-    public void modificarPaciente(PacienteDTO pacienteDTO) {
-        guardarPaciente(pacienteDTO);
+    public Paciente modificarPaciente(Paciente paciente) {
+        pacienteRepository.save(paciente);
+        return paciente;
     }
 
-    @Override
     public void eliminarPaciente(Long id) {
         pacienteRepository.deleteById(id);
     }
 
-    @Override
     public Set<PacienteDTO> listarPacientes() {
         List<Paciente> pacientes = pacienteRepository.findAll();
         Set<PacienteDTO> pacientesDTO = new HashSet<>();
