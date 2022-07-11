@@ -1,5 +1,6 @@
 package com.dh.clinica_odontologica.clinica_odontologica.services;
 
+
 import com.dh.clinica_odontologica.clinica_odontologica.dto.OdontologoDTO;
 import com.dh.clinica_odontologica.clinica_odontologica.dto.PacienteDTO;
 import com.dh.clinica_odontologica.clinica_odontologica.dto.TurnoDTO;
@@ -28,20 +29,15 @@ public class TurnoService {
     @Autowired
     ObjectMapper mapper;
 
-    public Turno crearTurno(Turno turno) {
-        Long pacienteId = turno.getPaciente().getId();
-        Long odontologoId = turno.getOdontologo().getId();
 
-        OdontologoDTO odontologoDTO = odontologoService.buscarOdontologo(odontologoId);
+    public Turno crearTurno(TurnoDTO nuevoTurnoDTO) {
+        PacienteDTO pacienteDTO = pacienteService.buscarPaciente(nuevoTurnoDTO.getPacienteId());
+        Paciente paciente = mapper.convertValue(pacienteDTO,Paciente.class);
+        OdontologoDTO odontologoDTO = odontologoService.buscarOdontologo(nuevoTurnoDTO.getOdontologoId());
         Odontologo odontologo = mapper.convertValue(odontologoDTO, Odontologo.class);
-        PacienteDTO pacienteDTO = pacienteService.buscarPaciente(pacienteId);
-        Paciente paciente = mapper.convertValue(pacienteDTO, Paciente.class);
 
-        turno.setPaciente(paciente);
-        turno.setOdontologo(odontologo);
-
+        Turno turno = new Turno(paciente, odontologo, nuevoTurnoDTO.getDate());
         turnoRepository.save(turno);
-
         return turno;
     }
 
@@ -50,6 +46,8 @@ public class TurnoService {
         TurnoDTO turnoDTO = null;
         if(turno.isPresent()){
             turnoDTO = mapper.convertValue(turno,TurnoDTO.class);
+            turnoDTO.setOdontologoId(turno.get().getOdontologo().getId());
+            turnoDTO.setPacienteId(turno.get().getPaciente().getId());
         }
         return turnoDTO;    }
 

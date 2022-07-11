@@ -9,10 +9,9 @@ import lombok.Setter;
 import java.time.LocalDateTime;
 
 @Getter @Setter
-@Data
 public class TurnoDTO {
     private Long id;
-    private Paciente paciente;
-    private Odontologo odontologo;
+    private Long pacienteId;
+    private Long odontologoId;
     private LocalDateTime date;
 }

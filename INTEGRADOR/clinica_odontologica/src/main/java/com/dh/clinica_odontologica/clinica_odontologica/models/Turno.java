@@ -1,5 +1,6 @@
 package com.dh.clinica_odontologica.clinica_odontologica.models;
 
+import com.dh.clinica_odontologica.clinica_odontologica.dto.PacienteDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
@@ -29,7 +30,7 @@ public class Turno {
     @JsonIgnore
     private Odontologo odontologo;
 
-    private LocalDateTime date = LocalDateTime.now();
+    private LocalDateTime date;
 
     public Turno(){}
     public Turno(Paciente paciente, Odontologo odontologo, LocalDateTime date) {

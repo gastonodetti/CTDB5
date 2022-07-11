@@ -4,11 +4,13 @@ no usar los dto en los services para guardar info - solo se usan para traer info
 
 Crear turno service:
 
- Long pacienteId = turno.getPaciente().getId();
+Long pacienteId = turno.getPaciente().getId();
         Long odontologoId = turno.getOdontologo().getId();
-        
-        Paciente paciente = mapper.convertValue(pacienteService.buscarPaciente(pacienteId), Paciente.class);
-        Odontologo odontologo = mapper.convertValue(odontologoService.buscarOdontologo(odontologoId), Odontologo.class);
-        
+
+        OdontologoDTO odontologoDTO = odontologoService.buscarOdontologo(odontologoId);
+        Odontologo odontologo = mapper.convertValue(odontologoDTO, Odontologo.class);
+        PacienteDTO pacienteDTO = pacienteService.buscarPaciente(pacienteId);
+        Paciente paciente = mapper.convertValue(pacienteDTO, Paciente.class);
+
         turno.setPaciente(paciente);
         turno.setOdontologo(odontologo);
