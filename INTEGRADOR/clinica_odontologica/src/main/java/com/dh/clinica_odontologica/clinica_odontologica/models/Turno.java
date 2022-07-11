@@ -1,16 +1,17 @@
 package com.dh.clinica_odontologica.clinica_odontologica.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 @Entity
 @Table(name = "turnos")
-@Getter
-@Setter
+@Getter @Setter
+@Component
 public class Turno {
 
     @Id
@@ -20,10 +21,12 @@ public class Turno {
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
     @JoinColumn(name = "paciente_id", nullable = false)
+    @JsonIgnore
     private Paciente paciente;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
     @JoinColumn(name = "odontologo_id", nullable = false)
+    @JsonIgnore
     private Odontologo odontologo;
 
     private LocalDateTime date = LocalDateTime.now();

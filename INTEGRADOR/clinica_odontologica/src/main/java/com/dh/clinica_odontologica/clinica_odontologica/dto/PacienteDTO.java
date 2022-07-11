@@ -1,10 +1,11 @@
 package com.dh.clinica_odontologica.clinica_odontologica.dto;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
-
+@Data
 public class PacienteDTO {
 
     private Long id;

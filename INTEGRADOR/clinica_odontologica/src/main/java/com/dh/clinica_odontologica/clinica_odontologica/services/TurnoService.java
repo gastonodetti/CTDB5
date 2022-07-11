@@ -1,7 +1,10 @@
 package com.dh.clinica_odontologica.clinica_odontologica.services;
 
+import com.dh.clinica_odontologica.clinica_odontologica.dto.OdontologoDTO;
+import com.dh.clinica_odontologica.clinica_odontologica.dto.PacienteDTO;
 import com.dh.clinica_odontologica.clinica_odontologica.dto.TurnoDTO;
 import com.dh.clinica_odontologica.clinica_odontologica.models.Odontologo;
+import com.dh.clinica_odontologica.clinica_odontologica.models.Paciente;
 import com.dh.clinica_odontologica.clinica_odontologica.models.Turno;
 import com.dh.clinica_odontologica.clinica_odontologica.repository.ITurnoRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -17,14 +20,28 @@ import java.util.Set;
 public class TurnoService {
     @Autowired
     private ITurnoRepository turnoRepository;
+    @Autowired
     private PacienteService pacienteService;
+    @Autowired
     private OdontologoService odontologoService;
 
     @Autowired
     ObjectMapper mapper;
 
     public Turno crearTurno(Turno turno) {
+        Long pacienteId = turno.getPaciente().getId();
+        Long odontologoId = turno.getOdontologo().getId();
+
+        OdontologoDTO odontologoDTO = odontologoService.buscarOdontologo(odontologoId);
+        Odontologo odontologo = mapper.convertValue(odontologoDTO, Odontologo.class);
+        PacienteDTO pacienteDTO = pacienteService.buscarPaciente(pacienteId);
+        Paciente paciente = mapper.convertValue(pacienteDTO, Paciente.class);
+
+        turno.setPaciente(paciente);
+        turno.setOdontologo(odontologo);
+
         turnoRepository.save(turno);
+
         return turno;
     }
 
